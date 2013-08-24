@@ -1,6 +1,6 @@
 {
     "name": "goodbye C",
-    "version": "0.1",
+    "version": "1.0",
     "manifest_version": 2,
     
     "description": "しぃアンテナから自動的に目的の記事へリダイレクトします。",
@@ -12,7 +12,8 @@
     "content_scripts":[
       {
         "matches":["http://2ch-c.net/?gt=*"],
-        "js":["script.js"]
+        "js":["jquery.js", "script.js"],
+        "run_at": "document_start"
       }
     ]
 }

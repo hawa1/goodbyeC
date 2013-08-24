@@ -1,1 +1,3 @@
-location.href=document.getElementById("pickup");
+$(function(){
+  location.href=$("a#pickup").attr("href");
+});
