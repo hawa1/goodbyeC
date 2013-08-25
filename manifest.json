@@ -1,17 +1,13 @@
 {
     "name": "goodbye C",
-    "version": "1.0",
+    "version": "1.4",
     "manifest_version": 2,
     
     "description": "しぃアンテナから自動的に目的の記事へリダイレクトします。",
-
-    "permissions": [
-        "tabs", "http://2ch-c.net/?gt=*"
-    ],
         
     "content_scripts":[
       {
-        "matches":["http://2ch-c.net/?gt=*"],
+        "matches":["http://2ch-c.net/?gt=*","http://matometatta-news.net/*", "http://newmofu.doorblog.jp/*", "http://newser.cc/*", "http://newpuru.doorblog.jp/*","http://matomeantena.com/feed*"],
         "js":["jquery.js", "script.js"],
         "run_at": "document_start"
       }
